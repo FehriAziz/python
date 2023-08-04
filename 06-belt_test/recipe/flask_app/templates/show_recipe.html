@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>recipes</title>
+</head>
+
+<body>
+
+    <button class="btn btn-info"><a href="/dashboard">Dashboard</a></button>
+    <button class="btn btn-danger"><a href="/logout">LOGOUT</a></button>
+    <div class="card">
+        <h4>{{recipe.name}}   {{recipe.owner.name}}</h4>
+        <h4>description : {{recipe.description}}</h4>
+        <h4>instructions : {{recipe.instructions}}</h4>
+        <h4>under 30 minutes ? : {{recipe.timecooking}}</h4>
+        <h4>date mode: {{recipe.date}}</h4>
+        <h4> seller:{{recipe.owner.first_name}} {{recipe.owner.last_name}}</h4>
+        </div>
+        <button class="btn btn-info"><a href="/dashboard">Purchase</a></button>
+
+
+    
+</body>
+
+</html>
